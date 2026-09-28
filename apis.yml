@@ -1,23 +1,64 @@
 aid: benxotccryptotrading
+
 name: Benxotccryptotrading
-description: 'Benxotccryptotrading is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://via.placeholder.com/150
+
+description: 'Benxotccryptotrading is a stub entry created during the API Evangelist harvesting process. No public website, documentation, or API endpoints have been identified for this entity. The company appears in secondary-market listings but lacks verifiable online presence. It is listed among cryptocurrency trading firms but without any accessible resources, making it a candidate for further investigation or removal if no resources become available. This entry reflects the current state of knowledge as of the profiling date.'
+
 url: https://raw.githubusercontent.com/api-evangelist/benxotccryptotrading/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Cryptocurrency
+- Trading
+- Finance
+- Stub
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
-- type: Website
-  url: https://equityzen.com/company/benxotccryptotrading
+
+
+  - type: Hosts
+    url: hosts/benxotccryptotrading-hosts.yml
+  - type: Vendors
+    url: vendors/benxotccryptotrading-vendors.yml
+  - type: DomainSecurity
+    url: security/benxotccryptotrading-domain-security.yml
+  - type: Website
+    url: https://equityzen.com/company/benxotccryptotrading
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public website or developer documentation was found; the equityzen listing returned HTTP 403 and no other domain could be identified.
+  evidence:
+    - url: https://equityzen.com/company/benxotccryptotrading
+      status: 403
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: minimal
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
